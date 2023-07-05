@@ -6,13 +6,12 @@ import {info} from "../../info/Info";
 
 
 export default function About() {
-    const firstName = info.firstName.toLowerCase()
+    // const firstName = info.firstName.toLowerCase()
     const lastName = info.lastName.toLowerCase()
     const mainDir = lastName.replace(' ', '_')
     
-    function contentText() {
-        return <>
-            
+    const contentText = () => {
+        return <div>
             <p><span style={{color: info.baseColor}}>{mainDir} $ <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
@@ -20,22 +19,22 @@ export default function About() {
                     <li key={index}><Box component={'span'} mr={'1rem'}>{hobby.emoji}</Box>{hobby.label}</li>
                 ))}
             </ul>
-        </>;
+        </div>;
     }
 
-    function aboutMeText() {
-        return <>
+    const aboutMeText = () => {
+        return <div>
             <p><span style={{color: info.baseColor}}>{mainDir} $</span> cat
                 about.txt </p>
             <p><span style={{color: info.baseColor}}>about.txt <span
                 className={Style.green}>(main)</span> $ </span>
                 {info.bio}
             </p>
-        </>;
+        </div>;
     }
 
-    function skillsText() {
-        return <>
+    const skillsText = () => {
+        return <div>
             <p><span style={{color: info.baseColor}}>{mainDir} $</span> cd skills/tools
             </p>
             <p><span style={{color: info.baseColor}}>skills/tools <span
@@ -84,11 +83,11 @@ export default function About() {
             <ul className={Style.skills}>
                 {info.skills.tools.map((skill, index) => <li key={index}>{skill}</li>)}
             </ul>
-        </>;
+        </div>;
     }
 
-    function miscText() {
-        return <>
+    const miscText = () => {
+        return <div>
             <p><span style={{color: info.baseColor}}>{mainDir} $</span> cd
                 hobbies/interests</p>
             <p><span style={{color: info.baseColor}}>hobbies/interests <span
@@ -98,7 +97,7 @@ export default function About() {
                     <li key={index}><Box component={'span'} mr={'1rem'}>{hobby.emoji}</Box>{hobby.label}</li>
                 ))}
             </ul>
-        </>;
+        </div>;
     }
 
     return (

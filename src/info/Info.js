@@ -22,18 +22,22 @@ export const info = {
     firstName: "Sheik Mohammed",
     lastName: "Umar Basha",
     initials: "</Umar Basha>", // the example uses first and last, but feel free to use three or more if you like.
-    position: "a Full Stack Developer | ML & Automation Engineer",
+    position: "a Full Stack Developer | AI Engineer | Azure Developer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
     baseColor: colors[0],
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
+            emoji: '🤓',
+            text: 'Exploring web 3, React Native & Three.js development'
+        },
+        {
             emoji: '📚',
-            text: 'fueled by reading Manga'
+            text: 'Fueled by reading Manga & exploring new tech'
         },
         {
             emoji: '🌎',
-            text: 'based in the India'
+            text: 'Based in the India'
         },
         {
             emoji: "💼",
@@ -45,36 +49,37 @@ export const info = {
         }
     ],
     socials: [
+        // {
+        //     link: "https://facebook.com",
+        //     icon: 'fa fa-facebook',
+        //     label: 'facebook'
+        // },
+        
         {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
-        {
-            link: "https://github.com",
+            link: "https://github.com/umarbasha007",
             icon: "fa fa-github",
             label: 'github'
         },
         {
-            link: "https://linkedin.com",
+            link: "https://www.linkedin.com/in/umarbasha007",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
         {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
-        }
+            link: "https://www.instagram.com/umarbasha_techmonk",
+            icon: 'fa fa-instagram',
+            label: 'instagram'
+        },
+        // {
+        //     link: "https://twitter.com",
+        //     icon: "fa fa-twitter",
+        //     label: 'twitter'
+        // }
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Umar Basha. I'm a Developer 3 at UST. I studied Computer Science at JNTUH, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    bio: "Hello! I'm Umar Basha. I'm a Developer 3 at UST. I studied Computer Science at JNTUH, I enjoy long walks on the beach, and I believe artificial intelligence is a good productivity tool. You should hire me!",
     contents: [
         {
             label: 'about.txt',
@@ -91,22 +96,22 @@ export const info = {
     skills:
         {
 
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator'],
+            proficientWith: ['ReactJS 16 & 18', '.NET Core', 'Python 3', 'NodeJS & Express', 'Databases', 'Azure AI', 'Azure Developer'],
+            exposedTo: ['Machine Learning', 'Progressive Web App - PWA', 'IoT' , 'WebVR', '3D website'],
             ciCd:['Azure DevOps', 'GitHub'],
-            frontEnd:['ReactJS 16', 'Angular 10', 'Ionic Framework',
-                'Material UI', 'Bootstrap 4', 'Three.js',
+            frontEnd:['ReactJS 16 & 18','Angular 10', 'Ionic Framework',
+                'Material UI', 'Ant Design' , 'Redux/Toolkit' , 'Bootstrap 5', 'Three.js',
                 'Chart.js', 'TypeScript', 'JavaScript (ES6)',
                 'HTML5', 'SCSS', 'CSS3'],
             backEnd:['C# based: .NET Core (3.1), ASP.NET, SignalR',
-                'Python based: FastAPI, Flask'],
+                'Python based: FastAPI, Flask' , 'JavaScript based: NodeJS, Express'],
             database:[
                 'SQL: MS SQL Server',
-                'NoSQL: Firebase, Azure Storage'],
+                'NoSQL: Firebase, MongoDB, Azure Storage'],
             patterns : [ 'MVC + CQRS', 'MVVM', 'SOLID', 'KISS', 'DRY', 'POM'],
             automation : [ 'PowerShell', 'Selenium (Python)' , 'Puppet (NodeJS)'],
             machineLearning_ai : [ 'Supervised Learning', 'Azure QnA Maker', 'Chatbot', 'Cognitive Search, Azure AI'],
-            azure : ['Azure AI', 'App Services', 'Static Web Apps', 'Azure Storage', 'Azure DevOps', 'Function App', 'Logic App'],
+            azure : ['Azure AI', 'App Services', 'Static Web Apps', 'Azure Storage', 'Azure DevOps', 'Function App', 'Logic App', 'Azure AD', 'Service Bus', 'Key-Vault', 'App Configurations'],
             tools : [ 'Canva', 'Abode XD', 'Power BI', 'Jupyter Notebook', 'Visual Studio Code']
     
                 
@@ -128,6 +133,10 @@ export const info = {
         {
             label: 'cooking',
             emoji: '👨‍🍳'
+        },
+        {
+            label : 'dev community',
+            emoji : '🫶'
         }
 // Same as above, change the emojis to match / relate to your hobbies or interests.
 // You can also remove the emojis if you'd like, I just think they look cute :P
