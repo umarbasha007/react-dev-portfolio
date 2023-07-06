@@ -1,8 +1,8 @@
 import React from 'react';
-import {Box, Grid, Paper} from "@mui/material";
+import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 import Style from './Timeline.module.scss';
-
+import classNames from "classnames";
 
 export default function Timeline(props) {
 
@@ -17,9 +17,9 @@ export default function Timeline(props) {
     const timelineInfo = infoDetails(header);
 
     return (
-        <Box width={{xs: '80%', md: '50%'}} className={Style.timelineBox}>
+        <Box width={{xs: '90%', md: '70%'}} className={ Style.timelineBox} padding={{xs: '1rem', md: '3rem'}}>
         
-        <Box  className={Style.paper} sx={{ boxShadow: 3 }}>
+        <Box  className={ classNames(Style.paper, Style.shadowed)} >
             <h2>{header}</h2>
             <ul className={Style.timeline}>
 

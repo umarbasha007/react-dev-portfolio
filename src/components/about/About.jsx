@@ -18,13 +18,13 @@ export default function About() {
 
         switch (refer) {
             case 'sectionAboutRef':
-                sectionAboutRef.current.scrollIntoView({ behavior: 'smooth' });
+                sectionAboutRef.current.scrollIntoView({ top: '50%', behavior: 'smooth' });
                 break;
             case 'sectionSkillRef':
-                sectionSkillRef.current.scrollIntoView({ behavior: 'smooth' });
+                sectionSkillRef.current.scrollIntoView({ top: '50%', behavior: 'smooth' });
                 break;
             case 'sectionHobbyRef':
-                sectionHobbyRef.current.scrollIntoView({ behavior: 'smooth' });
+                sectionHobbyRef.current.scrollIntoView({ top: '50%', behavior: 'smooth' });
                 break;
             default:
                 break;

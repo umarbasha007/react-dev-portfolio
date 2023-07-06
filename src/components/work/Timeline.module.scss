@@ -1,7 +1,7 @@
 @import "../../variables.modules.scss";
 
 $color_1: rgb(50,50,50);
-$color_2: rgb(250,80,80);
+$color_2: rgb(247, 82, 82);
 $font-family_1: 'Open Sans', sans-serif;
 $border-right-color_1: rgb(248,248,248);
 $border-bottom-color_1: rgb(255,255,255);
@@ -21,7 +21,7 @@ $border-left-color_1: rgb(248,248,248);
 
 .timelineBox {
     margin: auto;
-    padding: 3rem;
+    
     // text-align: center;
 }
 
@@ -56,7 +56,7 @@ $border-left-color_1: rgb(248,248,248);
 		background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
 		background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
 		background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
-		z-index: 5;
+		// z-index: 5;
 	}
 	li {
 		padding: 1em 0;
@@ -174,7 +174,7 @@ $border-left-color_1: rgb(248,248,248);
 .timeWrapper {
 	display: inline;
 	line-height: 1em;
-	font-size: 0.66666em;
+	font-size: 14px;
 	color: $color_2;
 	vertical-align: middle;
 }
@@ -192,7 +192,7 @@ $border-left-color_1: rgb(248,248,248);
 
 
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 780px) {
 	.timeline {
 		width: 100%;
 		padding: 4em 0 1em 0;
@@ -296,8 +296,12 @@ $border-left-color_1: rgb(248,248,248);
 	.timeWrapper {
 		display: block;
 		position: relative;
-		margin: 4px 0 0 0;
+		margin: 12px 0 0 0;
 		z-index: 14;
+		font-size: 10px;
+		background-color: rgb(245,245,245);;
+		border-radius: 4px;
+
 	}
 	.desc {
 		position: relative;
@@ -308,6 +312,8 @@ $border-left-color_1: rgb(248,248,248);
 		-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
 		box-shadow: 0 0 1px rgba(0,0,0,0.20);
 		z-index: 15;
+		border-radius: 4px;
+		font-size: 10px;
 	}
 }
 // @media screen and (min-width: 400px ?? max-width: 660px) {
