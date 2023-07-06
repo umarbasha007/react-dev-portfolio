@@ -27,7 +27,7 @@ export default function Timeline(props) {
 
             {timelineInfo.map((item, index) => (
                 <li key={index}>
-                    <div className={ item.direction == "right" ? Style.directionR : Style.directionL}>
+                    <div className={ item.direction === "right" ? Style.directionR : Style.directionL}>
                         <div className={Style.flagWrapper} >
                             <span className={Style.flag} > {item.title} </span>
                             <span className={Style.timeWrapper} ><span className={Style.time}  > {item.time} </span></span>

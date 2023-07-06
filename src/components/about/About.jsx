@@ -1,4 +1,4 @@
-import React from 'react';
+import React , {useRef} from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
 import {Box} from "@mui/material";
@@ -9,39 +9,63 @@ export default function About() {
     // const firstName = info.firstName.toLowerCase()
     const lastName = info.lastName.toLowerCase()
     const mainDir = lastName.replace(' ', '_')
+
+    const sectionAboutRef = useRef(null);
+    const sectionSkillRef = useRef(null);
+    const sectionHobbyRef = useRef(null);
+
+    const scrollToSection = ( refer ) => {
+
+        switch (refer) {
+            case 'sectionAboutRef':
+                sectionAboutRef.current.scrollIntoView({ behavior: 'smooth' });
+                break;
+            case 'sectionSkillRef':
+                sectionSkillRef.current.scrollIntoView({ behavior: 'smooth' });
+                break;
+            case 'sectionHobbyRef':
+                sectionHobbyRef.current.scrollIntoView({ behavior: 'smooth' });
+                break;
+            default:
+                break;
+        }
+
+
+        
+    };
     
     const contentText = () => {
         return <div>
             <p><span style={{color: info.baseColor}}>{mainDir} $ <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
-                {info.contents.map((hobby, index) => (
-                    <li key={index}><Box component={'span'} mr={'1rem'}>{hobby.emoji}</Box>{hobby.label}</li>
+                {info.contents.map((data, index) => (
+                    <li key={index} onClick={() => scrollToSection(data.refer)} ><Box component={'span'} mr={'1rem'}>{data.emoji}</Box>{data.label}</li>
                 ))}
             </ul>
         </div>;
     }
 
     const aboutMeText = () => {
-        return <div>
+        return <div ref={sectionAboutRef}>
             <p><span style={{color: info.baseColor}}>{mainDir} $</span> cat
                 about.txt </p>
             <p><span style={{color: info.baseColor}}>about.txt <span
                 className={Style.green}>(main)</span> $ </span>
-                {info.bio}
+                <span>{info.bio}</span>
             </p>
         </div>;
     }
 
     const skillsText = () => {
-        return <div>
+        return <div ref={sectionSkillRef}>
             <p><span style={{color: info.baseColor}}>{mainDir} $</span> cd skills/tools
             </p>
             <p><span style={{color: info.baseColor}}>skills/tools <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <p style={{color: info.baseColor}}> Proficient With</p>
             <ul className={Style.skills}>
-                {info.skills.proficientWith.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
+                {info.skills.proficientWith.map((proficiency, index) => <li  key={index}>{proficiency}</li>)}
             </ul>
             <p style={{color: info.baseColor}}> Exposed To</p>
             <ul className={Style.skills}>
@@ -87,7 +111,7 @@ export default function About() {
     }
 
     const miscText = () => {
-        return <div>
+        return <div ref={sectionHobbyRef}>
             <p><span style={{color: info.baseColor}}>{mainDir} $</span> cd
                 hobbies/interests</p>
             <p><span style={{color: info.baseColor}}>hobbies/interests <span
@@ -102,10 +126,10 @@ export default function About() {
 
     return (
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
-            <Terminal text={contentText()} emoji={'🏠'} title={'content'}/>
-            <Terminal text={aboutMeText()} emoji={'📋'} title={'about.txt'}/>
-            <Terminal text={skillsText()} emoji={'🧰'} title={'skills_and_tools'}/>
-            <Terminal text={miscText()} emoji={'☘️'} title={'hobbies_interests'}/>
+            <Terminal text={contentText()} emoji={'🏠'} title={'content'} />
+            <Terminal text={aboutMeText()} emoji={'📋'} title={'about.txt'} />
+            <Terminal text={skillsText()} emoji={'🧰'} title={'skills_and_tools'} />
+            <Terminal text={miscText()} emoji={'☘️'} title={'hobbies_interests'} />
         </Box>
     )
 }

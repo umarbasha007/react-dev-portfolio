@@ -29,11 +29,11 @@ export const info = {
     miniBio: [ // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
         {
             emoji: '🤓',
-            text: 'Exploring web 3, React Native & Three.js development'
+            text: 'Exploring web 3, React Native & Three.js'
         },
         {
             emoji: '📚',
-            text: 'Fueled by reading Manga & exploring new tech'
+            text: 'Fueled by reading Manga & Tech'
         },
         {
             emoji: '🌎',
@@ -83,15 +83,18 @@ export const info = {
     contents: [
         {
             label: 'about.txt',
-            emoji: '📋'
+            emoji: '📋',
+            refer : 'sectionAboutRef'
         },
         {
             label: 'skills_and_tools',
-            emoji: '🧰'
+            emoji: '🧰',
+            refer : 'sectionSkillRef'
         },
         {
             label: 'hobbies_interests',
-            emoji: '☘️'
+            emoji: '☘️',
+            refer : 'sectionHobbyRef'
         }],
     skills:
         {
