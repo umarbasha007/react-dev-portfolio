@@ -17,13 +17,11 @@ export default function Timeline(props) {
     const timelineInfo = infoDetails(header);
 
     return (
-        <Box width={{xs: '90%', md: '70%'}} className={ Style.timelineBox} padding={{xs: '1rem', md: '3rem'}}>
+        <Box width={{xs: '90%', md: '70%'}} className={ classNames(Style.timelineBox, Style.tiltInLeft)} padding={{xs: '1rem', md: '3rem'}}>
         
         <Box  className={ classNames(Style.paper, Style.shadowed)} >
             <h2>{header}</h2>
             <ul className={Style.timeline}>
-
-            
 
             {timelineInfo.map((item, index) => (
                 <li key={index}>
@@ -33,7 +31,7 @@ export default function Timeline(props) {
                             <span className={Style.timeWrapper} ><span className={Style.time}  > {item.time} </span></span>
                         </div>
                         <div className={Style.desc} > {item.description} </div>
-                        <div className={Style.desc} > {item.detail} </div>
+                        {item.detail === "" ? <div></div> : <div className={Style.desc} > {item.detail} </div>}
                     </div>
                 </li>
             ))}

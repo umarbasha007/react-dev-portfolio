@@ -172,7 +172,7 @@ export const info = {
             direction: "right",
             title: "Nalanda - High School",
             time: "2009 - 2011",
-            description: "English First lang",
+            description: "Languages : English, Hindi, Telugu",
             detail:""
         },
     ],
@@ -189,7 +189,7 @@ export const info = {
             title: "TCS",
             time: "2018 - 2022",
             description: "System Engineer",
-            detail:"Full Stack and ML Engineer "
+            detail:"Full Stack and AI/ML Engineer "
         },
     ]
 }
