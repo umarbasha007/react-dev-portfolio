@@ -87,12 +87,12 @@ export const info = {
             refer : 'sectionAboutRef'
         },
         {
-            label: 'skills_and_tools',
+            label: 'skills',
             emoji: '🧰',
             refer : 'sectionSkillRef'
         },
         {
-            label: 'hobbies_interests',
+            label: 'hobbies',
             emoji: '☘️',
             refer : 'sectionHobbyRef'
         }],

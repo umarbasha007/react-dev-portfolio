@@ -18,27 +18,42 @@ export default function Timeline(props) {
 
     return (
         <Box width={{xs: '90%', md: '70%'}} className={ classNames(Style.timelineBox, Style.tiltInLeft)} padding={{xs: '1rem', md: '3rem'}}>
-        
-        <Box  className={ classNames(Style.paper, Style.shadowed)} >
-            <h2>{header}</h2>
-            <ul className={Style.timeline}>
-
-            {timelineInfo.map((item, index) => (
-                <li key={index}>
-                    <div className={ item.direction === "right" ? Style.directionR : Style.directionL}>
-                        <div className={Style.flagWrapper} >
-                            <span className={Style.flag} > {item.title} </span>
-                            <span className={Style.timeWrapper} ><span className={Style.time}  > {item.time} </span></span>
-                        </div>
-                        <div className={Style.desc} > {item.description} </div>
-                        {item.detail === "" ? <div></div> : <div className={Style.desc} > {item.detail} </div>}
-                    </div>
-                </li>
-            ))}
             
+            <Box  className={ classNames(Style.paper, Style.shadowed)} >
+            
+                <Box sx={{backgroundColor: '#8c8c8c'}} p={'0.5rem'} borderRadius={'0.5rem 0.5rem 0 0'}
+                fontSize={'1rem'}>
+
+                <Box component={'span'} aria-label="title" 
+                    role="terminal title"
+                    className={classNames(Style.timelineTitle)}  
+                    fontSize={{ xs: '1rem' ,md : '1.3rem'}}             
+                    > {header} 
+                    </Box> 
+                </Box> 
+                {/* <h2 style={{fontWeight : '400'}} >{header}</h2> */}
+            
+                <div style={{padding: '1.5rem'}}>
+                <ul className={Style.timeline}>
+
+                    {timelineInfo.map((item, index) => (
+                        <li key={index}>
+                            <div className={ item.direction === "right" ? Style.directionR : Style.directionL}>
+                                <div className={Style.flagWrapper} >
+                                    <span className={Style.flag} > {item.title} </span>
+                                    <span className={Style.timeWrapper} ><span className={Style.time}  > {item.time} </span></span>
+                                </div>
+                                <div className={Style.desc} > {item.description} </div>
+                                {item.detail === "" ? <div></div> : <div className={Style.desc} > {item.detail} </div>}
+                            </div>
+                        </li>
+                    ))}
 
 
-            </ul>
+
+                    </ul>
+                </div>
+          
             </Box>
         </Box>
     );

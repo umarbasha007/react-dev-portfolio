@@ -59,9 +59,9 @@ export default function About() {
 
     const skillsText = () => {
         return <div ref={sectionSkillRef}>
-            <p><span style={{color: info.baseColor}}>{mainDir} $</span> cd skills/tools
+            <p><span style={{color: info.baseColor}}>{mainDir} $</span> cd skills
             </p>
-            <p><span style={{color: info.baseColor}}>skills/tools <span
+            <p><span style={{color: info.baseColor}}>skills<span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <p style={{color: info.baseColor}}> Proficient With</p>
             <ul className={Style.skills}>
@@ -113,8 +113,8 @@ export default function About() {
     const miscText = () => {
         return <div ref={sectionHobbyRef}>
             <p><span style={{color: info.baseColor}}>{mainDir} $</span> cd
-                hobbies/interests</p>
-            <p><span style={{color: info.baseColor}}>hobbies/interests <span
+                hobbies</p>
+            <p><span style={{color: info.baseColor}}>hobbies<span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
                 {info.hobbies.map((hobby, index) => (
@@ -128,8 +128,8 @@ export default function About() {
         <Box display={'flex'} flexDirection={'column'} alignItems={'center'} mt={'3rem'}>
             <Terminal text={contentText()} emoji={'🏠'} title={'content'} />
             <Terminal text={aboutMeText()} emoji={'📋'} title={'about.txt'} />
-            <Terminal text={skillsText()} emoji={'🧰'} title={'skills_and_tools'} />
-            <Terminal text={miscText()} emoji={'☘️'} title={'hobbies_interests'} />
+            <Terminal text={skillsText()} emoji={'🧰'} title={'skills'} />
+            <Terminal text={miscText()} emoji={'☘️'} title={'hobbies'} />
         </Box>
     )
 }

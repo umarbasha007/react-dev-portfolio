@@ -1,11 +1,12 @@
 @import "../../variables.modules.scss";
 
 $color_1: rgb(50,50,50);
-$color_2: rgb(247, 82, 82);
+$color_2: $red;
 $font-family_1: 'Open Sans', sans-serif;
 $border-right-color_1: rgb(248,248,248);
 $border-bottom-color_1: rgb(255,255,255);
 $border-left-color_1: rgb(248,248,248);
+$timelineBgColor: #27242f;
 
 /* ================ The Timeline ================ */
 /* ================ Timeline Media Queries ================ */
@@ -18,6 +19,11 @@ $border-left-color_1: rgb(248,248,248);
 // 	font-size: 112.5%;
 // 	line-height: 1.6em;
 // }
+.timelineTitle {
+	font-family: 'Courier New', Courier, monospace;
+	margin: auto;
+	display: table;
+  }
 
 .timelineBox {
     margin: auto;
@@ -26,10 +32,10 @@ $border-left-color_1: rgb(248,248,248);
 }
 
 .paper {
-    padding: 1.5rem;
+    // padding: 1.5rem;
     // color: $white;
-    background-color: $lightgray !important;
-    border-radius: 5px;
+    background-color: $timelineBgColor !important;
+    border-radius: 0.5rem;
     
 }
 
@@ -188,7 +194,7 @@ $border-left-color_1: rgb(248,248,248);
 	font-size: 16px;
 	font-style: italic;
 	line-height: 1.2rem;
-    color: $dark;
+    color: $white;
 
 
 }
@@ -314,6 +320,7 @@ $border-left-color_1: rgb(248,248,248);
 		z-index: 15;
 		border-radius: 4px;
 		font-size: 10px;
+		color: $dark;
 	}
 }
 // @media screen and (min-width: 400px ?? max-width: 660px) {
