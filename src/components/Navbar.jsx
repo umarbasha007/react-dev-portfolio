@@ -32,11 +32,6 @@ const links = [
     to: "/blog",
     active: "blog",
   },
-  {
-    name: "Report",
-    to: "/analytics",
-    active: "analytics",
-  },
 ];
 
 export default function Navbar({ darkMode, handleClick }) {

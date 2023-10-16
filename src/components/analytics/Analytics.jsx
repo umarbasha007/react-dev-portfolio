@@ -364,7 +364,9 @@ function Analytics() {
       </div>
       {showReport && (
         <div className={Style.reports}>
-          <h2>Random Salary per month</h2>
+          <br />
+          <label className={Style.headings}>Random Salary per month</label>
+          <br />
           <LineChart
             width={700}
             height={300}
@@ -410,8 +412,9 @@ function Analytics() {
               activeDot={{ r: 4 }}
             />
           </LineChart>
-
-          <h2>Quad Salary per month</h2>
+          <br />
+          <label className={Style.headings}>Quad Salary per month</label>
+          <br />
           <LineChart
             width={1200}
             height={300}
@@ -457,7 +460,9 @@ function Analytics() {
               activeDot={{ r: 4 }}
             />
           </LineChart>
-          <h2>Half Salary per month</h2>
+          <br />
+          <label className={Style.headings}>Half Salary per month</label>
+          <br />
           <LineChart
             width={500}
             height={300}
