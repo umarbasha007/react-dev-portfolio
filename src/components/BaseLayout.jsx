@@ -8,9 +8,11 @@ import Blog from "./blog/Blog";
 import { Route, Routes } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 import Analytics from "./analytics/Analytics";
+import { Link, useLocation } from "react-router-dom";
 
 export default function BaseLayout() {
   let [darkMode, setDarkMode] = useState(false);
+  const location = useLocation();
 
   function handleToggleDarkMode() {
     let oppositeOfCurrentDarkMode = !darkMode;
@@ -63,6 +65,7 @@ export default function BaseLayout() {
           >
             <p>Modified &hearts; by Umar Basha</p>
             <p>&copy; 2023</p>
+            <Link to={"/analytics"}> Analytics</Link>
           </Box>
         </Grid>
       </Grid>
