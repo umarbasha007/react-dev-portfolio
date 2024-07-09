@@ -64,7 +64,7 @@ export default function BaseLayout() {
             width={"100%"}
           >
             <p>Modified &hearts; by Umar Basha</p>
-            <p>&copy; 2023</p>
+            <p>&copy; 2024</p>
             <Link to={"/analytics"}> Analytics</Link>
           </Box>
         </Grid>
