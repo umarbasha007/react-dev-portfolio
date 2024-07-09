@@ -21,7 +21,7 @@ export const info = {
   firstName: "Sheik Mohammed",
   lastName: "Umar Basha",
   initials: "</Umar Basha>", // the example uses first and last, but feel free to use three or more if you like.
-  position: "a Full Stack Developer | AI Engineer | Azure Developer",
+  position: "a Full Stack Developer | AI Engineer | Cloud Engineer (Azure)",
   selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
   gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
   baseColor: colors[0],
@@ -29,7 +29,7 @@ export const info = {
     // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
       emoji: "🤓",
-      text: "Exploring web 3, React Native & Three.js",
+      text: "Exploring Web 3, React Native & HTF",
     },
     {
       emoji: "📚",
@@ -37,7 +37,7 @@ export const info = {
     },
     {
       emoji: "🌎",
-      text: "Based in the India",
+      text: "Based in India",
     },
     {
       emoji: "💼",
@@ -113,10 +113,18 @@ export const info = {
       "WebVR",
       "3D website",
     ],
-    ciCd: ["Azure DevOps", "GitHub", "Docker"],
+    ciCd: [
+      "Azure DevOps",
+      "Git / GitHub",
+      "Docker",
+      "Kubernetes - AKS",
+      "Helm Chart",
+      "JFrog",
+    ],
     frontEnd: [
       "ReactJS 16 & 18",
       "Angular 10",
+      "Backstage.io",
       "Ionic Framework",
       "Material UI",
       "Ant Design",
@@ -136,8 +144,8 @@ export const info = {
       "JavaScript based: NodeJS, Express",
     ],
     database: [
-      "SQL: MS SQL Server, SQLite",
-      "NoSQL: Firebase, MongoDB, Azure Storage",
+      "SQL: MS SQL Server, SQLite, MySQL",
+      "NoSQL: Redis, MongoDB, Azure Storage, Firebase",
     ],
     patterns: ["MVC + CQRS", "MVVM", "SOLID", "KISS", "DRY", "POM"],
     automation: ["PowerShell", "Selenium (Python)", "Puppet (NodeJS)"],
@@ -146,6 +154,7 @@ export const info = {
       "Azure QnA Maker",
       "Chatbot",
       "Cognitive Search, Azure AI",
+      "GenAI - LLM, RAG, HuggingFace, LongChain",
     ],
     azure: [
       "Azure AI",
@@ -231,7 +240,7 @@ export const info = {
       title: "UST",
       time: "2022 - Present",
       description: "Developer 3",
-      detail: "Full Stack Developer",
+      detail: "Full Stack Cloud Engineer",
     },
     {
       direction: "left",
