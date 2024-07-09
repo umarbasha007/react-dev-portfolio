@@ -54,14 +54,21 @@ const randomSalaryData = [
     inHandSalary: 57808,
   },
   {
-    name: "2023",
-    totalSalary: 2390,
-    inHandSalary: 3800,
+    name: "Dec 2023",
+
+    totalSalary: 186236,
+    inHandSalary: 143213,
+  },
+  {
+    name: "June 2024",
+
+    totalSalary: 198606,
+    inHandSalary: 156493,
   },
   {
     name: "Future 2024",
-    totalSalary: 2390,
-    inHandSalary: 3800,
+    totalSalary: 300000,
+    inHandSalary: 200000,
   },
 ];
 
@@ -204,9 +211,21 @@ const quadSalaryData = [
   },
   {
     name: "Q4 2023 / month",
-
-    totalSalary: 0,
-    inHandSalary: 0,
+    month: "Dec 2023",
+    totalSalary: 186236,
+    inHandSalary: 143213,
+  },
+  {
+    name: "Q1 2024 / month",
+    month: "Mar 2024",
+    totalSalary: 186236,
+    inHandSalary: 131210,
+  },
+  {
+    name: "Q2 2024 / month",
+    month: "June 2024",
+    totalSalary: 198606,
+    inHandSalary: 156493,
   },
 ];
 
@@ -287,6 +306,12 @@ const halfSalaryData = [
     totalSalary: 187236,
     inHandSalary: 129567,
   },
+  {
+    name: "H1 2024 / month",
+    month: "June 2024",
+    totalSalary: 198606,
+    inHandSalary: 156493,
+  },
   //   {
   //     name: "H1 2024 / month",
 
@@ -295,7 +320,7 @@ const halfSalaryData = [
   //   },
 ];
 
-const pswd = "Rockon@123";
+const pswd = "Rockon@007";
 function Analytics() {
   let randomSalaryDataInfo = randomSalaryData.map((item, index) => {
     return {
@@ -313,6 +338,7 @@ function Analytics() {
   let quadSalaryDataInfo = quadSalaryData.map((item, index) => {
     return {
       name: item.name,
+      month: item.month ? item.month : "NULL",
       totalSalary: item.totalSalary,
       inHandSalary: item.inHandSalary,
       deductedSalary: item.totalSalary - item.inHandSalary,
@@ -339,6 +365,10 @@ function Analytics() {
   const [password, setPassword] = useState("");
   const [showReport, setShowReport] = useState(false);
 
+  const checkAccess = (password) => {
+    password === pswd ? setShowReport(true) : setShowReport(false);
+  };
+
   return (
     <>
       <div className={Style.permission}>
@@ -353,10 +383,12 @@ function Analytics() {
           }}
         />
         <br />
+        <br />
         <Button
           variant="contained"
           onClick={() => {
-            password === pswd ? setShowReport(true) : setShowReport(false);
+            // password === pswd ? setShowReport(true) : setShowReport(false);
+            checkAccess(password);
           }}
         >
           Submit
@@ -431,6 +463,13 @@ function Analytics() {
             <YAxis />
             <Tooltip />
             <Legend />
+            <Line
+              type="monotone"
+              dataKey="month"
+              stroke="#000000"
+              label="Total Salary"
+              activeDot={{ r: 8 }}
+            />
             <Line
               type="monotone"
               dataKey="totalSalary"
@@ -508,6 +547,7 @@ function Analytics() {
               activeDot={{ r: 4 }}
             />
           </LineChart>
+          <br />
         </div>
       )}
     </>
