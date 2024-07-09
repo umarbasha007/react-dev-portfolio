@@ -10,3 +10,7 @@
 - Added new data for analytics
 - Added new skills
 - Added browser tab icon
+
+### Fixed:
+
+- Routing issue on reloading page in live site
