@@ -29,7 +29,7 @@ export const info = {
     // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
       emoji: "🤓",
-      text: "Exploring Web 3, React Native & HTF",
+      text: "Exploring Web 3, NextJS & HTF",
     },
     {
       emoji: "📚",
@@ -41,7 +41,7 @@ export const info = {
     },
     {
       emoji: "💼",
-      text: "Developer 3 at UST",
+      text: "Developer 3 at Ztek",
     },
     {
       emoji: "📧",
@@ -99,8 +99,8 @@ export const info = {
   skills: {
     proficientWith: [
       "ReactJS 16 & 18",
-      ".NET Core",
-      "Python 3",
+      "ASP.NET Core - C#",
+      "FastAPI - Python 3",
       "NodeJS & Express",
       "Databases",
       "Azure AI",
@@ -128,6 +128,7 @@ export const info = {
       "Ionic Framework",
       "Material UI",
       "Ant Design",
+      "Fluent UI",
       "Redux/Toolkit",
       "Bootstrap 5",
       "Three.js",
@@ -139,7 +140,7 @@ export const info = {
       "CSS3",
     ],
     backEnd: [
-      "C# based: .NET Core (3.1), ASP.NET, SignalR",
+      "C# based: .NET Core, ASP.NET 8, SignalR",
       "Python based: FastAPI, Flask",
       "JavaScript based: NodeJS, Express",
     ],
@@ -237,17 +238,24 @@ export const info = {
   experiance: [
     {
       direction: "right",
-      title: "UST",
-      time: "2022 - Present",
-      description: "Developer 3",
-      detail: "Full Stack Cloud Engineer",
+      title: "Ztek",
+      time: "2024 - Present",
+      description: "Senior Software Engineer",
+      detail: "Full Stack & Data Engineer",
     },
     {
       direction: "left",
+      title: "UST",
+      time: "2022 - 2024",
+      description: "Developer 3",
+      detail: "Full Stack - Cloud Engineer & Platform Engineer",
+    },
+    {
+      direction: "right",
       title: "TCS",
       time: "2018 - 2022",
       description: "System Engineer",
-      detail: "Full Stack and AI/ML Engineer ",
+      detail: "Full Stack & AI/ML Engineer",
     },
   ],
 };
