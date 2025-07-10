@@ -1,3 +1,3 @@
 - npm start -> run the app
-- npm build -> build the app
+- npm run build -> build the app
 - npm run deploy -> deploy app directly from local system
