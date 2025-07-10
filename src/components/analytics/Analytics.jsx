@@ -66,9 +66,19 @@ const randomSalaryData = [
     inHandSalary: 156493,
   },
   {
-    name: "Future 2024",
+    name: "Dec 2024",
     totalSalary: 300000,
-    inHandSalary: 200000,
+    inHandSalary: 220996,
+  },
+  {
+    name: "June 2025",
+    totalSalary: 330000,
+    inHandSalary: 262539,
+  },
+  {
+    name: "Future 2026",
+    totalSalary: 400000,
+    inHandSalary: 300000,
   },
 ];
 
@@ -227,6 +237,30 @@ const quadSalaryData = [
     totalSalary: 198606,
     inHandSalary: 156493,
   },
+  {
+    name: "Q3 2024 / month",
+    month: "Aug 2024",
+    totalSalary: 183870.97,
+    inHandSalary: 153772.0,
+  },
+  {
+    name: "Q4 2024 / month",
+    month: "Dec 2024",
+    totalSalary: 300000,
+    inHandSalary: 220996,
+  },
+  {
+    name: "Q1 2025 / month",
+    month: "Mar 2025",
+    totalSalary: 300000,
+    inHandSalary: 220996,
+  },
+  {
+    name: "Q2 2025 / month",
+    month: "June 2025",
+    totalSalary: 330000,
+    inHandSalary: 262539,
+  },
 ];
 
 const halfSalaryData = [
@@ -312,12 +346,18 @@ const halfSalaryData = [
     totalSalary: 198606,
     inHandSalary: 156493,
   },
-  //   {
-  //     name: "H1 2024 / month",
-
-  //     totalSalary: 283300,
-  //     inHandSalary: 192000,
-  //   },
+  {
+    name: "H2 2024 / month",
+    month: "Dec 2024",
+    totalSalary: 300000,
+    inHandSalary: 220996,
+  },
+  {
+    name: "H1 2025 / month",
+    month: "June 2025",
+    totalSalary: 330000,
+    inHandSalary: 262539,
+  },
 ];
 
 const pswd = "Rockon@007";
@@ -352,6 +392,7 @@ function Analytics() {
   let halflySalaryDataInfo = halfSalaryData.map((item, index) => {
     return {
       name: item.name,
+      month: item.month ? item.month : "NULL",
       totalSalary: item.totalSalary,
       inHandSalary: item.inHandSalary,
       deductedSalary: item.totalSalary - item.inHandSalary,
@@ -466,7 +507,7 @@ function Analytics() {
             <Line
               type="monotone"
               dataKey="month"
-              stroke="#000000"
+              stroke="#2f2645"
               label="Total Salary"
               activeDot={{ r: 8 }}
             />
@@ -518,6 +559,13 @@ function Analytics() {
             <YAxis />
             <Tooltip />
             <Legend />
+            <Line
+              type="monotone"
+              dataKey="month"
+              stroke="#2f2645"
+              label="Total Salary"
+              activeDot={{ r: 8 }}
+            />
             <Line
               type="monotone"
               dataKey="totalSalary"

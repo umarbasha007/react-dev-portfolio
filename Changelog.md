@@ -1,3 +1,9 @@
+## Release [10th Jul, 2025]
+
+### Changed:
+
+- Updated home, about me, history, analytics
+
 ## Release [4th Sept, 2024]
 
 ### Changed:

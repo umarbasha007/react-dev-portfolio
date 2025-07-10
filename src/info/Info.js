@@ -29,11 +29,11 @@ export const info = {
     // these are just some "tidbits" about yourself. You can look at mine https://paytonjewell.github.io/#/ for an example if you'd like
     {
       emoji: "🤓",
-      text: "Exploring Web 3, NextJS & HTF",
+      text: "Exploring AI, Web 3, NextJS & HTF",
     },
     {
       emoji: "📚",
-      text: "Fueled by reading Manga & Tech",
+      text: "Fueled by reading Manga, Tech & Salah",
     },
     {
       emoji: "🌎",
@@ -41,7 +41,7 @@ export const info = {
     },
     {
       emoji: "💼",
-      text: "Developer 3 at Ztek",
+      text: "Senior Software Engineer at Ztek",
     },
     {
       emoji: "📧",
@@ -78,7 +78,7 @@ export const info = {
     // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
     // Just change the links so that they lead to your social profiles.
   ],
-  bio: "Hello! I'm Umar Basha. I'm a Developer 3 at UST. I studied Computer Science at JNTUH, I enjoy long walks on the beach, and I believe artificial intelligence is a good productivity tool. You should hire me!",
+  bio: "Hello! I'm Umar Basha. I'm a Senior Software Engineer at Ztek. I studied Computer Science at JNTUH CEJ (Govt. University), I enjoy long walks morning walks and I believe learning attitude and humbleness are key in building up best team. We should get connected at umarbasha007@gmail.com or linkedIn or catch up for a coffee!",
   contents: [
     {
       label: "about.txt",
@@ -99,7 +99,7 @@ export const info = {
   skills: {
     proficientWith: [
       "ReactJS 16 & 18",
-      "ASP.NET Core - C#",
+      "ASP.NET Core 8 - C#",
       "FastAPI - Python 3",
       "NodeJS & Express",
       "Databases",
@@ -130,6 +130,7 @@ export const info = {
       "Ant Design",
       "Fluent UI",
       "Redux/Toolkit",
+      "Redux-Saga",
       "Bootstrap 5",
       "Three.js",
       "Chart.js",
@@ -140,12 +141,13 @@ export const info = {
       "CSS3",
     ],
     backEnd: [
-      "C# based: .NET Core, ASP.NET 8, SignalR",
+      "C# based: .NET Core 8, ASP.NET 8, SignalR",
       "Python based: FastAPI, Flask",
       "JavaScript based: NodeJS, Express",
+      "Backstage.io",
     ],
     database: [
-      "SQL: MS SQL Server, SQLite, MySQL",
+      "SQL: MS SQL Server (& Store Procedures), SQLite, MySQL",
       "NoSQL: Redis, MongoDB, Azure Storage, Firebase",
     ],
     patterns: ["MVC + CQRS", "MVVM", "SOLID", "KISS", "DRY", "POM"],
@@ -169,6 +171,7 @@ export const info = {
       "Service Bus",
       "Key-Vault",
       "App Configurations",
+      "API Management",
     ],
     tools: [
       "Canva",
@@ -184,10 +187,6 @@ export const info = {
       emoji: "📖",
     },
     {
-      label: "theater",
-      emoji: "🎭",
-    },
-    {
       label: "movies",
       emoji: "🎥",
     },
@@ -196,7 +195,7 @@ export const info = {
       emoji: "👨‍🍳",
     },
     {
-      label: "dev community",
+      label: "community",
       emoji: "🫶",
     },
     // Same as above, change the emojis to match / relate to your hobbies or interests.
@@ -241,7 +240,7 @@ export const info = {
       title: "Ztek",
       time: "2024 - Present",
       description: "Senior Software Engineer",
-      detail: "Full Stack & Data Engineer",
+      detail: "Full Stack Cloud Engineer",
     },
     {
       direction: "left",
